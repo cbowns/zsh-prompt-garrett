@@ -356,7 +356,7 @@ function prompt_garrett_setup {
   # Report terminal line number.
   #
 
-  eval prompt_garrett_line_number='${green}+${magenta}%!'
+  # eval prompt_garrett_line_number='${green}+${magenta}%!'
 
   #
   # Report git info.
