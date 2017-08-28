@@ -192,7 +192,7 @@ function prompt_garrett_precmd {
   prompt_garrett_pwd
 
   # Trigger a notification after x time has elapsed.
-  eval prompt_garrett_precmd_notification
+  # eval prompt_garrett_precmd_notification
 
   # Get Ruby info.
   if (( $+functions[ruby-info] )); then
