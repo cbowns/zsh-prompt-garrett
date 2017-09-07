@@ -74,15 +74,7 @@ pmodload 'helper'
 function prompt_garrett_pwd {
   local pwd="${PWD/#$HOME/~}"
 
-  # PWD will fit.
-  if [[ "$pwd" == (#m)[/~] ]]; then
-    prompt_garrett_current_dir="${prompt_garrett_color_pwd}$MATCH"
-    unset MATCH
-
-  # PWD needs truncation.
-  else
-    prompt_garrett_current_dir="${prompt_garrett_color_pwd}${${${(@j:/:M)${(@s:/:)pwd}##.#?}:h}%/}/${pwd:t}"
-  fi
+  prompt_garrett_current_dir="${prompt_garrett_color_pwd}${pwd}"
 }
 
 # Notify of command completion after n seconds has passed.
