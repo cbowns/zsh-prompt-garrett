@@ -352,6 +352,8 @@ function prompt_garrett_setup {
   # zstyle ':prezto:module:git:info' verbose 'yes'
 
   # Git prompt info.
+  # These are how you format the key for whatever thing is it, e.g. action.
+  # Then down below, in the local_status key, these are all concatenated together.
   zstyle ':prezto:module:git:info:branch'    format "${cyan} on${prompt_garrett_color_prompt} ${green}%b"
   zstyle ':prezto:module:git:info:remote'    format ""
   zstyle ':prezto:module:git:info:action'    format "${yellow} %s"
@@ -363,6 +365,7 @@ function prompt_garrett_setup {
   # Git remote status.
   zstyle ':prezto:module:git:info:behind'    format "${magenta} behind %B"
   zstyle ':prezto:module:git:info:ahead'     format "${magenta} ahead %A"
+  # I'm not sure this is supported:
   zstyle ':prezto:module:git:info:diverged'  format "${magenta} diverged %A/%B"
   # zstyle ':prezto:module:git:info:stashed'   format "${cyan} stashed"
 
