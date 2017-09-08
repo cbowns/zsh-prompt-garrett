@@ -377,10 +377,11 @@ function prompt_garrett_setup {
   zstyle ':prezto:module:git:info:untracked' format "${white} ?"
 
   # Git prompt styles.
+  # Keys are in https://github.com/sorin-ionescu/prezto/tree/master/modules/git#main-contexts
   zstyle ':prezto:module:git:info:keys' format \
     'prompt_info'    "%b" \
     'rprompt'        "%R" \
-    'local_status'   "%C%D%a%d%m%r%U%u" \
+    'local_status'   "%s%C%D%a%d%m%r%U%u" \
     'remote_status'  "%B%A%S" \
     'sha'            "%c" \
 
