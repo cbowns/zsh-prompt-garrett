@@ -387,9 +387,9 @@ function prompt_garrett_setup {
   # These are how you format the key for whatever thing is it, e.g. action.
   # Then down below, in the local_status key, these are all concatenated together.
   zstyle ':prezto:module:git:info:branch'    format "%F{cyan} on${prompt_garrett_color_prompt} %F{green}%b"
-# =======
+# > upstream/master ↓
 #   zstyle ':prezto:module:git:info:branch'    format "%F{cyan} λ${prompt_garrett_color_prompt}:%F{green}%b"
-# >>>>>>> upstream/master
+# > upstream/master ↑
   zstyle ':prezto:module:git:info:remote'    format ""
   zstyle ':prezto:module:git:info:action'    format "%F{yellow} %s"
   zstyle ':prezto:module:git:info:position'  format "%F{red} %p"
@@ -402,8 +402,10 @@ function prompt_garrett_setup {
   zstyle ':prezto:module:git:info:ahead'     format "%F{magenta} ahead %A"
   # I'm not sure this is supported:
   zstyle ':prezto:module:git:info:diverged'  format "%F{magenta} diverged %A/%B"
-  zstyle ':prezto:module:git:info:stashed'   format "%F{cyan} stashed"
-# =======
+  # I have stashes all the time. removed.
+  # zstyle ':prezto:module:git:info:stashed'   format "%F{cyan} stashed"
+
+# > upstream/master ↓
 #   zstyle ':prezto:module:git:info:commit'    format "%F{yellow} %.7c"
 
 #   # Git remote status.
@@ -411,7 +413,7 @@ function prompt_garrett_setup {
 #   zstyle ':prezto:module:git:info:ahead'     format "%F{magenta} ⬆ "
 #   zstyle ':prezto:module:git:info:diverged'  format "%F{magenta} ⥮"
 #   zstyle ':prezto:module:git:info:stashed'   format "%F{cyan} ✭"
-# >>>>>>> upstream/master
+# > upstream/master ↑
 
   # Git local status.
   zstyle ':prezto:module:git:info:clean'     format ""
